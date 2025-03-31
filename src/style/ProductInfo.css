@@ -1,0 +1,75 @@
+/* Prefijo con .product-info- para evitar conflictos */
+.product-info-container {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: left; /* Alineación del texto a la izquierda */
+    background: linear-gradient(120deg, #f0f4c3, #e72486); /* Gradiente de fondo */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    border: 2px solid #c58edb; /* Borde resaltado */
+}
+
+.product-info-title {
+    font-size: 30px;
+    font-weight: 700; /* Más negrita */
+    color: #4a148c; /* Color morado oscuro */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espacio entre letras */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra de texto */
+}
+
+.product-info-image {
+    width: 40%; /* Imagen a la izquierda */
+    max-width: 250px;
+    height: auto;
+    border-radius: 12px;
+    margin-right: 25px; /* Espacio a la derecha de la imagen */
+    float: left; /* Flotar la imagen a la izquierda */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15); /* Sombra en la imagen */
+}
+
+.product-info-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6; /* Espacio entre líneas */
+}
+
+.product-info-price {
+    font-size: 24px;
+    font-weight: 600; /* Negrita moderada */
+    color: #d32f2f; /* Color rojo oscuro */
+    margin-bottom: 20px;
+}
+
+.quantity-container {
+    margin: 15px 0;
+    display: inline-flex; /* Usar flexbox inline */
+    align-items: center; /* Alinear verticalmente */
+}
+
+.quantity-container input {
+    width: 60px;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px; /* Espacio a los lados del input */
+}
+
+.add-to-cart-button {
+    background: linear-gradient(to right, #64b5f6, #1976d2); /* Gradiente de azul */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en el botón */
+    }
+
+.add-to-cart-button:hover {
+    background: linear-gradient(to right, #42a5f5, #1565c0); /* Gradiente más oscuro en hover */
+}

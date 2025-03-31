@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.loginBackground{
+    background-color: #131926;
+    background-image: url('https://i.pinimg.com/736x/0f/5a/9b/0f5a9ba3c56c082d8a0d8a87a6ebbb88.jpg');
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLoginBorder{
+    position: relative;
+    margin: auto;
+    background: linear-gradient(135deg, rgba(85,84,109,1) 0%, rgba(33,40,55,1) 34%, rgba(33,40,55,1) 100%);
+    padding: 1px;
+    border-radius: 1rem;
+    z-index: 80;
+}
+
+
+.containerLogin{
+    width: 450px;
+    margin: auto;
+    background-color: #212837;
+    color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: left;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    z-index: 40;
+
+}
+
+.containerLogin h3
+{
+    font-weight:normal;
+    font-size: 1.2rem;
+    margin: 0.4rem 0;   
+
+}
+
+.formLoginBorder{
+    padding: 4px;
+    background-color: white;
+}
+
+
+.formLogin{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formLogin div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.formLogin div input
+{
+    background-color: #212837;
+    border: 2px solid #2f3645;
+    font-size: 0.8rem;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+}
+
+
+.formLogin div input::placeholder{
+    color: white;
+}
+
+.login-button-container{
+    align-self: center;
+}
+
+.login-button{
+    padding: 0.6rem 2rem;
+    border-radius: 1rem;
+    background: rgba(129,90,235,1);
+    background: linear-gradient(to bottom, rgba(129,90,235,1) 0%, rgba(129,90,235,1) 26%, rgba(102,47,211,1) 82%, rgba(102,47,211,1) 100%);
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    margin: 0.6rem 0;
+}
+
+label{
+    font-size: 0.8rem;
+
+}
