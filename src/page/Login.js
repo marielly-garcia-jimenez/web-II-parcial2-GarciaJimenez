@@ -37,7 +37,7 @@ export default function Login()
                         <input onChange={handleUserChange} className='login-input' type="text" placeholder='User' name='user'  />
                     </div>
                     <div>
-                        <input onChange={handlePasswordChange} className='login-input' type="password" placeholder='Password' name='password'  />
+                        <input onChange={handlePasswordChange} className='login-input' type="d" placeholder='Password' name='password'  />
                     </div>                  
                     <div className='login-button-container'>
                         <button className='login-button' type='submit'>
