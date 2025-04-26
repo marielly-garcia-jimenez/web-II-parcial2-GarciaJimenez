@@ -1,0 +1,95 @@
+.base-personaje-light,
+.base-personaje-dark {
+    margin: 0;
+    padding: 0;
+    width: 96%;
+    min-height: 84vh;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    font-family: 'Roboto Slab', serif; /* Una fuente serif moderna y atractiva */
+}
+
+.base-personaje-light{
+    color: #1e8449; /* Un verde más intenso */
+}
+
+.base-personaje-dark{
+    background-color: #1c2833; /* Un azul oscuro */
+    color: #f8f9f9; /* Un gris claro para el texto */
+}
+
+.base-personaje-light h1,
+.base-personaje-dark h1 {
+    font-size: 3.0rem; /* Letras del título más grandes */
+    margin: 30px 0; /* Más margen vertical */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container-personaje-light, .container-personaje-dark {
+    width: 85%; /* Un poco más ancho */
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    gap: 25px; /* Un poco más de espacio entre imagen y texto */
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 5px 5px 15px rgba(0, 150, 136, 0.15); /* Sombra sutil con un toque azulado */
+    padding: 20px; /* Más espacio interno */
+    background-color: inherit;
+}
+
+.container-personaje-light {
+    background-color: #aed581; /* Un verde claro y suave */
+}
+
+.container-personaje-dark {
+    background-color: #455a64; /* Un gris azulado oscuro */
+}
+
+.img-personaje-light, .img-personaje-dark {
+    width: 45%; /* Imagen un poco más grande */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+
+.img-personaje-light img, .img-personaje-dark img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Bordes más redondeados para la imagen */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra suave en la imagen */
+}
+
+.info-personaje-ind-light, .info-personaje-ind-dark {
+    width: 55%; /* Damos un poco menos de espacio al texto */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    padding: 20px; /* Más padding */
+    font-size: 1.1rem; /* Letras de la información un poco más grandes */
+    order: 1;
+    font-family: 'Merriweather', serif; /* Otra fuente serif elegante */
+}
+
+.container-result-buscador-light, .container-result-buscador-dark {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin-top: 50px;
+    gap: 20px;
+}
+
+/* Importar las fuentes desde Google Fonts (debes incluir esto en tu <head> del HTML) */
+/* <link rel="preconnect" href="https://fonts.googleapis.com"> */
+/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> */
+/* <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> */

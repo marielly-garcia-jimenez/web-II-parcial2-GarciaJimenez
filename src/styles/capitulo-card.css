@@ -1,0 +1,149 @@
+.indiv-capitulo-card {
+    width: 95%;
+    max-width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 15px;
+    gap: 15px;
+    background-color: #1e272e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-capcard {
+    width: 30%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-capcard img {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.info-capcard {
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Cambiamos a space-around para distribuir mejor el espacio */
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 0;
+    padding: 15px 10px; /* Añadimos un poco más de padding vertical y horizontal */
+    direction: ltr;
+    box-sizing: border-box;
+}
+
+.titulo-capcard {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #50fa7b;
+    margin-bottom: 8px; /* Aumentamos un poco el margen inferior del título */
+    word-break: break-word;
+}
+
+.info-capcard-text {
+    margin-top: 5px; /* Añadimos un poco de margen superior al texto */
+    color: #f8f8f2;
+    font-size: 0.9rem;
+    word-break: break-word;
+    line-height: 1.4; /* Aumentamos el espacio entre líneas del texto */
+}
+
+.info-capcard-titulo-light,
+.icon-light,
+.info-capcard-titulo-dark,
+.icon-dark {
+    color: #bdc3c7;
+    font-size: 0.7rem;
+    margin-top: 5px; /* Añadimos un poco de margen superior a las etiquetas */
+}
+
+.info-card-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 15px; /* Aumentamos el margen superior de los botones */
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.info-card-btn div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 8px; /* Aumentamos el espacio entre el número y la palabra */
+    cursor: pointer;
+}
+
+.icon-like p,
+.icon-dislike p {
+    margin: 0;
+    padding: 0;
+}
+
+.icon-light,
+.icon-dark {
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.icon-light {
+    color: #2ecc71;
+}
+
+.icon-dark {
+    color: #e74c3c;
+}
+
+.icon-light:hover,
+.icon-dark:hover {
+    transform: scale(1.15);
+}
+
+.view-details {
+    color: #3498db;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-top: 8px; /* Aumentamos el margen superior de "View Details" */
+    display: block;
+}
+
+.view-details:hover {
+    text-decoration: underline;
+}
+
+.season-episode {
+    color: #f1c40f;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.air-date {
+    color: #95a5a6;
+    font-size: 0.7rem;
+    margin-top: 5px; /* Añadimos un poco de margen superior a la fecha */
+}

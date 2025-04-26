@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap'); /* Importar una fuente similar */
+
+.card-personaje-light,
+.card-personaje-dark{
+    width: 220px; /* Aumentar ligeramente el ancho */
+    height: auto;
+    margin: 15px; /* Aumentar ligeramente el margen */
+    padding: 15px; /* Aumentar ligeramente el padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px; /* Bordes más redondeados */
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada */
+    transition: transform 0.2s ease-in-out; /* Transición para la animación */
+    cursor: pointer; /* Indicar que es interactivo */
+}
+
+.card-personaje-light:hover,
+.card-personaje-dark:hover {
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+}
+
+.card-personaje-light{
+    background-color: #36eb5494; /* Un verde más claro */
+    border: 1px solid #c3e6cb;
+}
+
+.card-personaje-dark{
+    background-color: #343a40; /* Un gris oscuro más común */
+    color: #f8f9fa; /* Texto gris claro para el fondo oscuro */
+    border: 1px solid #495057;
+}
+
+.info-personaje-light,
+.info-personaje-dark{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info-personaje-light h3,
+.info-personaje-dark h3 {
+    font-family: 'Knewave', sans-serif; /* Aplicar la fuente similar */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1e7e34; /* Verde más oscuro para el título claro */
+}
+
+.card-personaje-dark .info-personaje-dark h3 {
+    color: #ced4da; /* Gris claro para el título oscuro */
+}
+
+.container-microinfo-persoanje-light,
+.container-microinfo-persoanje-dark {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px; /* Aumentar ligeramente el gap */
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+.container-microinfo-persoanje-light p,
+.container-microinfo-persoanje-dark p{
+    font-size: 0.9rem; /* Aumentar ligeramente el tamaño de la fuente */
+    margin: 0;
+    padding: 3px 0;
+    color: #055217; /* Verde más intenso para la info clara */
+}
+
+.card-personaje-dark .container-microinfo-persoanje-dark p {
+    color: #adb5bd; /* Gris más claro para la info oscura */
+}
+
+.card-personaje-likes-light,
+.card-personaje-likes-dark{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Aumentar ligeramente el gap */
+    padding: 15px 0;
+    margin-top: 15px;
+}
+
+.btn-personaje-light,
+.btn-personaje-dark {
+    width: 85%; /* Aumentar ligeramente el ancho del botón */
+    height: 45px; /* Aumentar ligeramente la altura del botón */
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px; /* Bordes más redondeados */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transición para el hover del botón */
+}
+
+.btn-personaje-light {
+    background-color: #fff;
+    border: 1px solid #1e7e34;
+}
+
+.btn-personaje-light:hover {
+    background-color: #e6f7ec; /* Verde claro al pasar el ratón */
+}
+
+.btn-personaje-dark {
+    background-color: #495057;
+    border: 1px solid #f8f9fa;
+}
+
+.btn-personaje-dark:hover {
+    background-color: #5a6268; /* Gris más oscuro al pasar el ratón */
+}
+
+.btn-text-light,
+.btn-text-dark {
+    font-weight: bold; /* Fuente un poco más gruesa */
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btn-text-light {
+    color: #1e7e34;
+}
+
+.btn-text-dark {
+    color: #f8faf8;
+}
