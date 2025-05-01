@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); /* Importar una fuente monoespaciada */
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'); /* Importar la fuente llamativa para el título */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'); 
 
 .titulo-episodio-light,
 .titulo-episodio-dark {
-    font-family: 'Luckiest Guy', cursive; /* Fuente para "PILOT" */
+    font-family: 'Luckiest Guy', cursive; 
     font-weight: normal;
-    font-size: 3rem; /* Tamaño del título "PILOT" */
-    color: #228B22; /* Color del título "PILOT" */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del título "PILOT" */
+    font-size: 3rem; 
+    color: #228B22; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin-bottom: 10px; /* Espacio debajo del título "PILOT" */
+    margin-bottom: 10px; 
 }
 
 .container-episodio-light,
 .container-episodio-dark {
-    font-family: 'Roboto Mono', monospace; /* Fuente para "Fecha de lanzamiento" y "Episodio" */
-    font-size: 1.1rem; /* Tamaño de "Fecha de lanzamiento" y "Episodio" */
-    color: #555; /* Color de "Fecha de lanzamiento" y "Episodio" */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem; 
+    color: #555; 
     text-align: center;
-    margin-bottom: 15px; /* Espacio debajo de "Episodio" */
+    margin-bottom: 15px; 
 }
 
 .container-fav-light,

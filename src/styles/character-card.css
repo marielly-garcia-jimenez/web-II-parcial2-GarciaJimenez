@@ -70,14 +70,14 @@
 
 .container-microinfo-persoanje-light p,
 .container-microinfo-persoanje-dark p{
-    font-size: 0.9rem; /* Aumentar ligeramente el tamaño de la fuente */
+    font-size: 0.9rem; 
     margin: 0;
     padding: 3px 0;
-    color: #055217; /* Verde más intenso para la info clara */
+    color: #055217; 
 }
 
 .card-personaje-dark .container-microinfo-persoanje-dark p {
-    color: #adb5bd; /* Gris más claro para la info oscura */
+    color: #adb5bd; 
 }
 
 .card-personaje-likes-light,
@@ -87,23 +87,23 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* Aumentar ligeramente el gap */
+    gap: 15px; 
     padding: 15px 0;
     margin-top: 15px;
 }
 
 .btn-personaje-light,
 .btn-personaje-dark {
-    width: 85%; /* Aumentar ligeramente el ancho del botón */
-    height: 45px; /* Aumentar ligeramente la altura del botón */
+    width: 85%; 
+    height: 45px; 
     margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 8px; /* Bordes más redondeados */
+    border-radius: 8px; 
     text-decoration: none;
-    transition: background-color 0.3s ease; /* Transición para el hover del botón */
+    transition: background-color 0.3s ease; 
 }
 
 .btn-personaje-light {
@@ -112,7 +112,7 @@
 }
 
 .btn-personaje-light:hover {
-    background-color: #e6f7ec; /* Verde claro al pasar el ratón */
+    background-color: #e6f7ec; 
 }
 
 .btn-personaje-dark {
@@ -121,12 +121,12 @@
 }
 
 .btn-personaje-dark:hover {
-    background-color: #5a6268; /* Gris más oscuro al pasar el ratón */
+    background-color: #5a6268; 
 }
 
 .btn-text-light,
 .btn-text-dark {
-    font-weight: bold; /* Fuente un poco más gruesa */
+    font-weight: bold; 
     text-align: center;
     font-size: 1rem;
 }

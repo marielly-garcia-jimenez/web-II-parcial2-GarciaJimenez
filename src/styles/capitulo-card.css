@@ -40,11 +40,11 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; /* Cambiamos a space-around para distribuir mejor el espacio */
+    justify-content: space-around;
     align-items: flex-start;
     text-align: left;
     margin-bottom: 0;
-    padding: 15px 10px; /* Añadimos un poco más de padding vertical y horizontal */
+    padding: 15px 10px; 
     direction: ltr;
     box-sizing: border-box;
 }
@@ -53,16 +53,16 @@
     font-weight: bold;
     font-size: 1.2rem;
     color: #50fa7b;
-    margin-bottom: 8px; /* Aumentamos un poco el margen inferior del título */
+    margin-bottom: 8px; 
     word-break: break-word;
 }
 
 .info-capcard-text {
-    margin-top: 5px; /* Añadimos un poco de margen superior al texto */
+    margin-top: 5px;
     color: #f8f8f2;
     font-size: 0.9rem;
     word-break: break-word;
-    line-height: 1.4; /* Aumentamos el espacio entre líneas del texto */
+    line-height: 1.4; 
 }
 
 .info-capcard-titulo-light,
@@ -71,7 +71,7 @@
 .icon-dark {
     color: #bdc3c7;
     font-size: 0.7rem;
-    margin-top: 5px; /* Añadimos un poco de margen superior a las etiquetas */
+    margin-top: 5px; 
 }
 
 .info-card-btn {
@@ -81,7 +81,7 @@
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
-    margin-top: 15px; /* Aumentamos el margen superior de los botones */
+    margin-top: 15px;
     position: absolute;
     bottom: 10px;
     right: 15px;
@@ -93,7 +93,7 @@
     justify-content: center;
     align-items: center;
     font-size: 0.8rem;
-    gap: 8px; /* Aumentamos el espacio entre el número y la palabra */
+    gap: 8px; 
     cursor: pointer;
 }
 
@@ -126,7 +126,7 @@
     color: #3498db;
     font-size: 0.8rem;
     text-decoration: none;
-    margin-top: 8px; /* Aumentamos el margen superior de "View Details" */
+    margin-top: 8px; 
     display: block;
 }
 
@@ -145,5 +145,5 @@
 .air-date {
     color: #95a5a6;
     font-size: 0.7rem;
-    margin-top: 5px; /* Añadimos un poco de margen superior a la fecha */
+    margin-top: 5px; 
 }

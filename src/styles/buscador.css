@@ -1,3 +1,4 @@
+
 .base-buscador-light,
 .base-buscador-dark {
     margin: 0;
@@ -18,7 +19,7 @@
     color: #ffffff;
 }
 
-/* Contenedor principal del buscador */
+
 .buscador-light,
 .buscador-dark {
     width: 90%;
@@ -27,36 +28,32 @@
     gap: 1.5rem;
 }
 
-/* Contenedor de filtros (donde aplicaremos el fondo) */
+
 .buscador-filters-light {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #1f660d96; /* Fondo claro para el tema light */
-    padding: 15px; /* Espacio alrededor de los filtros */
-    border-radius: 10px; /* Bordes redondeados para el fondo */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05); /* Sombra suave */
-    box-sizing: border-box;
-}
-
-.buscador-filters-dark {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #333; /* Fondo oscuro para el tema dark */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
     padding: 15px;
+    background-color: #f0fff0;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.02); /* Sombra suave para el tema oscuro */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
+    width: 400px; 
+    margin: 0 auto; 
 }
 
-/* Inputs */
-.buscador-filters-light input,
-.buscador-filters-dark input {
+
+.buscador-filters-light > * {
+    flex-basis: calc(50% - 0.5rem); 
+    min-width: auto; 
+    box-sizing: border-box; 
+}
+
+
+.buscador-filters-light input[type="text"] {
     padding: 0.75rem;
     border: 1px solid #5ae630;
     border-radius: 8px;
@@ -64,36 +61,35 @@
     background-color: inherit;
     color: inherit;
     min-width: 150px;
-    box-sizing: border-box;
+    flex-grow: 1; 
 }
 
-/* Contenedor de selects */
-.buscador-select-light,
-.buscador-select-dark {
+
+.buscador-select-light {
+    flex-basis: 100%; 
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 /* Cada select */
-.select-light,
-.select-dark {
-    flex: 1;
+.buscador-select-light .select-light {
+    flex-basis: calc(50% - 0.5rem);
+    min-width: 120px; 
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-    min-width: 120px;
+    box-sizing: border-box;
 }
 
-.select-light label,
-.select-dark label {
+.buscador-select-light .select-light label {
     font-size: 0.9rem;
     color: inherit;
 }
 
-.select-light select,
-.select-dark select {
+.buscador-select-light .select-light select {
     padding: 0.6rem;
     border-radius: 8px;
     border: 1px solid #5ae630;
@@ -102,14 +98,15 @@
     color: inherit;
     cursor: pointer;
     box-sizing: border-box;
+    flex-grow: 1;
 }
 
-/* Estilos específicos para el tema claro (si los necesitas) */
+
 .buscador-light {
-    /* Puedes añadir estilos específicos para el tema claro aquí si es necesario */
+    
 }
 
-/* Estilos específicos para el tema oscuro (si los necesitas) */
+
 .buscador-dark {
-    /* Puedes añadir estilos específicos para el tema oscuro aquí si es necesario */
+    
 }

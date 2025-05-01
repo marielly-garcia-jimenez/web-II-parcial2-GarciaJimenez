@@ -1,7 +1,8 @@
+/* Estilos base para el contenedor principal de la página del personaje */
 .base-personaje-light,
 .base-personaje-dark {
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Añadimos un poco de padding al contenedor base */
     width: 96%;
     min-height: 84vh;
     margin-bottom: 30px;
@@ -9,87 +10,139 @@
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    font-family: 'Roboto Slab', serif; /* Una fuente serif moderna y atractiva */
+    font-family: 'Roboto Slab', serif; 
+    box-sizing: border-box;
 }
 
 .base-personaje-light{
-    color: #1e8449; /* Un verde más intenso */
+    color: #1e8449; 
+    
 }
 
 .base-personaje-dark{
-    background-color: #1c2833; /* Un azul oscuro */
-    color: #f8f9f9; /* Un gris claro para el texto */
+    background-color: #0b0c10; 
+    color: #66fcf1; 
 }
 
 .base-personaje-light h1,
 .base-personaje-dark h1 {
-    font-size: 3.0rem; /* Letras del título más grandes */
-    margin: 30px 0; /* Más margen vertical */
+    font-size: 3.0rem; 
+    margin: 30px 0 25px 0; 
     text-align: center;
-    margin-bottom: 25px;
 }
 
-.container-personaje-light, .container-personaje-dark {
-    width: 85%; /* Un poco más ancho */
+
+.container-personaje-light,
+.container-personaje-dark {
+    width: 85%; 
     height: auto;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-end; 
     margin-bottom: 25px;
-    gap: 25px; /* Un poco más de espacio entre imagen y texto */
-    border-radius: 20px; /* Bordes más redondeados */
-    box-shadow: 5px 5px 15px rgba(0, 150, 136, 0.15); /* Sombra sutil con un toque azulado */
-    padding: 20px; /* Más espacio interno */
-    background-color: inherit;
+    gap: 25px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 255, 242, 0.3); 
+    padding: 20px; 
+    box-sizing: border-box;
 }
 
 .container-personaje-light {
-    background-color: #aed581; /* Un verde claro y suave */
+    background-color: #c8e6c9; 
 }
 
 .container-personaje-dark {
-    background-color: #455a64; /* Un gris azulado oscuro */
+    background-color: #1f2833; 
 }
 
-.img-personaje-light, .img-personaje-dark {
-    width: 45%; /* Imagen un poco más grande */
+
+.img-personaje-light,
+.img-personaje-dark {
+    width: 40%; 
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    order: 2;
+    order: 2; 
 }
 
-.img-personaje-light img, .img-personaje-dark img {
+.img-personaje-light img,
+.img-personaje-dark img {
     width: 100%;
     height: auto;
-    border-radius: 20px; /* Bordes más redondeados para la imagen */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra suave en la imagen */
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 255, 242, 0.2);
+    object-fit: cover; 
 }
 
-.info-personaje-ind-light, .info-personaje-ind-dark {
-    width: 55%; /* Damos un poco menos de espacio al texto */
+
+.info-personaje-ind-light,
+.info-personaje-ind-dark {
+    width: 60%;
     height: auto;
     display: flex;
     flex-direction: column;
     text-align: start;
     justify-content: center;
-    padding: 20px; /* Más padding */
-    font-size: 1.1rem; /* Letras de la información un poco más grandes */
-    order: 1;
-    font-family: 'Merriweather', serif; /* Otra fuente serif elegante */
+    padding: 20px;
+    font-size: 1.1rem;
+    order: 1; 
+    font-family: 'Merriweather', serif; 
+    box-sizing: border-box;
+    color: inherit;
 }
 
-.container-result-buscador-light, .container-result-buscador-dark {
+
+.info-personaje-ind-light p,
+.info-personaje-ind-dark p {
+    margin-bottom: 8px;
+}
+
+.info-personaje-ind-light strong,
+.info-personaje-ind-dark strong {
+    font-weight: bold;
+    margin-right: 5px;
+    color: inherit; 
+}
+
+.alive-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #fff; 
+    background-color: #28a745; 
+}
+
+
+.volver-personajes-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    border: 2px solid #66fcf1; 
+    color: #66fcf1; 
+    background-color: transparent; 
+}
+
+.volver-personajes-button:hover {
+    background-color: #66fcf1;
+    color: #0b0c10; 
+}
+
+
+.container-result-buscador-light,
+.container-result-buscador-dark {
     width: 95%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     margin-top: 50px;
     gap: 20px;
 }
-
-/* Importar las fuentes desde Google Fonts (debes incluir esto en tu <head> del HTML) */
-/* <link rel="preconnect" href="https://fonts.googleapis.com"> */
-/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> */
-/* <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> */

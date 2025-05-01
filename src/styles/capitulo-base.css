@@ -9,8 +9,8 @@
     font-family: Arial, Helvetica, sans-serif;
     background-image: url('https://i.pinimg.com/736x/5a/9b/2d/5a9b2df4c3b38e5cf774bfa517034a8d.jpg'); /* Reemplaza con tu imagen */
     background-size: cover;
-    background-position: center; /* Centrar la imagen de fondo */
-    transition: background-color 0.3s ease-in-out; /* Transición suave para el cambio de tema */
+    background-position: center; 
+    transition: background-color 0.3s ease-in-out; 
 }
 
 .base-light {
@@ -39,26 +39,26 @@
 .container-capitulos-dark {
     width: 95%;
     margin: 0;
-    padding: 20px; /* Añadí un poco de padding para el espaciado */
+    padding: 20px; 
     margin-top: 20px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Más adaptable a diferentes tamaños de pantalla */
-    gap: 25px; /* Aumenté un poco el gap */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px; 
     justify-content: center;
     align-items: center;
 }
 
-/* Animación al pasar el ratón por las cartas */
+
 .card-capitulos-light,
 .card-capitulos-dark {
     width: 100%;
-    height: auto; /* Ajuste automático de la altura */
+    height: auto; 
     margin: 0;
-    padding: 15px; /* Añadí un poco de padding interno */
+    padding: 15px; 
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transiciones suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
 }
 
 .card-capitulos-light {
@@ -73,11 +73,11 @@
 
 .card-capitulos-light:hover,
 .card-capitulos-dark:hover {
-    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el ratón */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
-/* Animación sutil de aparición de las cartas */
+
 .card-capitulos-light,
 .card-capitulos-dark {
     opacity: 0;
@@ -90,15 +90,15 @@
 }
 
 .titulo-seccion {
-    font-family: 'Playfair Display', serif; /* Un tipo de letra serif elegante */
+    font-family: 'Playfair Display', serif; 
     font-size: 3rem;
     margin-bottom: 30px;
     text-align: center;
-    background: #1e272e; /* Un azul oscuro, similar al de la imagen */
+    background: #1e272e; 
     -webkit-background-clip: text;
-    color: #1e272e; /* Color del texto azul oscuro */
-    letter-spacing: 0.5px; /* Un espaciado más sutil */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    color: #1e272e; 
+    letter-spacing: 0.5px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeInSlideDown 0.8s ease-out 0.2s forwards;

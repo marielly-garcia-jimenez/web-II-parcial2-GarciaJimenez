@@ -37,9 +37,9 @@ export default function CharacterDetail(){
                         <p><strong>origin:</strong> {personaje?.origin.name}</p>
                         
                         {personaje?.type === "" ? (
-                            <p><strong>Type:</strong> </p>
+                            <p><strong></strong> </p>
                         ) : (
-                            <p><strong>Type:</strong> {personaje?.type}</p>
+                            <p><strong></strong> {personaje?.type}</p>
                         )}
                     </div>
                     
