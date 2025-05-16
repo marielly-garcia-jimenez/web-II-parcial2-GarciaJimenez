@@ -1,0 +1,187 @@
+.base-recepie {
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: linear-gradient(120deg, #1e1e2f, #2e2e3e);
+  min-height: 100vh;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.recepie-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recepie-header {
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección a columna para centrar verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    gap: 1rem; /* Reducimos un poco el espacio entre los elementos */
+    margin-bottom: 2rem;
+    text-align: center; /* Centra el texto dentro de los elementos */
+}
+
+.meal-image {
+    width: 200px; /* Puedes ajustar el tamaño de la imagen si lo deseas */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 14px #ff66cc;
+}
+
+.recepie-info h1 {
+    font-size: 2rem; /* Ajustamos el tamaño de la fuente si es necesario */
+    margin: 0;
+}
+
+.recepie-info h3 {
+    margin: 0.3rem 0; /* Reducimos el margen */
+    color: #8d4e6e;
+    font-size: 1rem; /* Ajustamos el tamaño de la fuente si es necesario */
+}
+
+.meal-id {
+  font-size: 0.9rem;
+  
+  color: #8d4e6e;
+}
+
+.content-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem 0;
+  align-items: flex-start;
+}
+
+.video {
+  flex: 1;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 14px #ff66cc;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.instructions-ingredients {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #2a2a40;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px #ff66cc88;
+}
+
+.instructions {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.instructions h2,
+.ingredients h2 {
+  margin-top: 0;
+  color: #e97ece;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0rem; /* Antes estaba en 1rem */
+  gap: 0rem; /* Asegura cercanía si necesario */
+}
+
+.restaurar-btn {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  background-color: #ff66cc;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.restaurar-btn:hover {
+  background-color: #cc4499;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ingredient-card {
+  background-color: var(--card-color);
+  padding: 0.75rem;
+  border-radius: 0; /* <-- Esto hace que el recuadro no tenga esquinas redondeadas */
+  border: 1px solid var(--highlight-color);
+  box-shadow: var(--box-shadow);
+  margin: 0.5rem;
+}
+
+.ingredient-card span {
+  font-weight: bold;
+}
+
+.ingredient-info {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.delete-btn {
+  background-color: #ff5f5f;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #cc4444;
+}
+
+/* Scroll personalizado */
+.instructions::-webkit-scrollbar {
+  width: 6px;
+}
+
+.instructions::-webkit-scrollbar-track {
+  background: #2a2a40;
+}
+
+.instructions::-webkit-scrollbar-thumb {
+  background: #ff66cc;
+  border-radius: 3px;
+}
+

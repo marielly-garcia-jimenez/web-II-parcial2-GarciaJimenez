@@ -1,0 +1,60 @@
+.category-false {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centramos verticalmente los elementos */
+    justify-content: flex-start; /* Alineamos el contenido al inicio */
+    border: 2px solid #293040;
+    background-color: #0E1326;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 0.5rem; /* Añadimos un poco de espacio entre las categorías */
+    padding: 0.5rem; /* Añadimos un poco de padding general */
+}
+
+.category-true {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centramos verticalmente los elementos */
+    justify-content: flex-start; /* Alineamos el contenido al inicio */
+    background-color: #014455;
+    color: #0E1326;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 0.5rem; /* Añadimos un poco de espacio entre las categorías */
+    padding: 0.5rem; /* Añadimos un poco de padding general */
+}
+
+.category-image {
+    width: 20%; /* Aumentamos el ancho de la imagen para que ocupe más espacio */
+    height: auto; /* La altura se ajusta automáticamente */
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 1rem; /* Añadimos espacio entre la imagen y el texto */
+}
+
+.category-image img {
+    width: 100%; /* La imagen ocupa todo el ancho de su contenedor */
+    height: auto;
+    transform: translateX(0%); /* Eliminamos la traslación horizontal */
+    display: block;
+    object-fit: cover; /* Aseguramos que la imagen cubra el contenedor sin deformarse */
+}
+
+.category-true h2,
+.category-false h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0; /* Eliminamos el padding interno del texto */
+    font-weight: 600;
+}
+
+.category-false:hover,
+.category-true:hover {
+    cursor: pointer;
+    background-color: #441840;
+    color: #0E1326;
+    transition: all 0.3s ease;
+}
