@@ -1,45 +1,45 @@
 .category-false {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Centramos verticalmente los elementos */
-    justify-content: flex-start; /* Alineamos el contenido al inicio */
+    align-items: center;
+    justify-content: flex-start; 
     border: 2px solid #293040;
     background-color: #0E1326;
     border-radius: 10px;
     font-family: 'Arial', sans-serif;
-    margin-bottom: 0.5rem; /* Añadimos un poco de espacio entre las categorías */
-    padding: 0.5rem; /* Añadimos un poco de padding general */
+    margin-bottom: 0.5rem; 
+    padding: 0.5rem; 
 }
 
 .category-true {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Centramos verticalmente los elementos */
-    justify-content: flex-start; /* Alineamos el contenido al inicio */
+    align-items: center; 
+    justify-content: flex-start; 
     background-color: #014455;
     color: #0E1326;
     border-radius: 10px;
     font-family: 'Arial', sans-serif;
-    margin-bottom: 0.5rem; /* Añadimos un poco de espacio entre las categorías */
-    padding: 0.5rem; /* Añadimos un poco de padding general */
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
 }
 
 .category-image {
-    width: 20%; /* Aumentamos el ancho de la imagen para que ocupe más espacio */
-    height: auto; /* La altura se ajusta automáticamente */
+    width: 20%; 
+    height: auto;
     overflow: hidden;
     position: relative;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    margin-right: 1rem; /* Añadimos espacio entre la imagen y el texto */
+    margin-right: 1rem; 
 }
 
 .category-image img {
-    width: 100%; /* La imagen ocupa todo el ancho de su contenedor */
+    width: 100%; 
     height: auto;
-    transform: translateX(0%); /* Eliminamos la traslación horizontal */
+    transform: translateX(0%);
     display: block;
-    object-fit: cover; /* Aseguramos que la imagen cubra el contenedor sin deformarse */
+    object-fit: cover; 
 }
 
 .category-true h2,
@@ -47,7 +47,7 @@
     font-size: 1rem;
     font-weight: bold;
     margin: 0;
-    padding: 0; /* Eliminamos el padding interno del texto */
+    padding: 0; 
     font-weight: 600;
 }
 

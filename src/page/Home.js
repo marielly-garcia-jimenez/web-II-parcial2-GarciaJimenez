@@ -18,7 +18,7 @@ export default function Home() {
   const [sortValue, setSortValue] = useState("asc");
 
 
-  // Al cargar la página, se obtienen las categorías
+
   useEffect(() =>{
     const fetchCategories = async () => {
       const data = await getCategories();
@@ -30,7 +30,7 @@ export default function Home() {
   }, [])
 
 
-  // Cuando se selecciona una categoría, se obtienen los platillos de esa categoría
+
   useEffect(() => {
     const fetchPlatillos = async () =>{
       const data = await getPlatillosByCategory(categorieSelected);
@@ -43,7 +43,7 @@ export default function Home() {
   }, [categorieSelected])
   
 
-  // Cuando se escribe una palabra, se filtran los platillos
+
   useEffect(() => {
     const hasWord = word !== null && word !== undefined;
     
@@ -60,7 +60,7 @@ export default function Home() {
     
   }, [word, platillos]);
 
-  // Cuando se selecciona un valor de ordenamiento, se ordenan los platillos
+
   useEffect(() => {
     const sortedPlatillos = sortPlatillos([...filteredPlatillos], sortValue);
     setFilteredPlatillos(sortedPlatillos);
@@ -133,7 +133,7 @@ export default function Home() {
             {/* GRID DE PLATILLOS */}
             <div className="platillos">
               {loading ? (
-                <div className="loading">Loading...</div>
+                <div className="loading">Loading</div>
               ) : (
                 filteredPlatillos.length > 0 ?(
                   filteredPlatillos.map((platillo) => (

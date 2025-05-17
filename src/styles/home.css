@@ -1,4 +1,4 @@
-/* Estilos generales de la página */
+
 .base {
   background-color: #02051d;
   min-height: 100vh;
@@ -15,9 +15,9 @@
 /* HERO */
 .hero {
   display: flex;
-  align-items: center; /* Centra verticalmente los elementos */
-  width: 98%; /* Aún más ancho para el Hero */
-  max-width: 1600px; /* Aumentamos el ancho máximo del Hero */
+  align-items: center; 
+  width: 98%; 
+  max-width: 1600px; 
   background-color: #f7f7f7;
   font-family: 'Georgia', serif;
   border-bottom-left-radius: 0.5rem;
@@ -27,9 +27,9 @@
   margin-bottom: 2rem;
 }
 
-/* LEFT SIDE (Imagen) */
+
 .left-column {
-  flex: 0 0 20%; /* Reducimos aún más el ancho de la imagen para compensar el mayor ancho del Hero */
+  flex: 0 0 20%; 
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -40,12 +40,12 @@
   display: block;
   width: auto;
   height: auto;
-  max-height: 90px; /* Reducimos un poco la altura de la imagen para que no se vea demasiado grande en el Hero más ancho */
+  max-height: 90px; 
   max-width: 90%;
   object-fit: contain;
 }
 
-/* RIGHT SIDE (Texto) */
+
 .right-column {
   flex: 1;
   padding: 2rem;
@@ -55,7 +55,7 @@
   align-items: flex-start;
 }
 
-/* LOGO */
+
 .logo {
   display: flex;
   align-items: center;
@@ -68,16 +68,16 @@
   font-size: 1.3rem;
 }
 
-/* TITLE + MESSAGE */
+
 .title-row {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 70%; /* Reducimos el ancho del texto para que no se vea demasiado estirado */
+  width: 70%;
 }
 
 .line {
-  font-size: 2.8rem; /* Aumentamos un poco el tamaño del título */
+  font-size: 2.8rem; 
   margin: 0;
   color: #2c2c2c;
   line-height: 1.2;
@@ -85,7 +85,7 @@
 }
 
 .message {
-  font-size: 1rem; /* Aumentamos un poco el tamaño del subtítulo */
+  font-size: 1rem; 
   max-width: none;
   text-align: left;
   color: #555;
@@ -96,14 +96,14 @@
   display: none;
 }
 
-/* CONTENT-MAIN */
+
 .content-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
-  width: 98%; /* Aumentamos el ancho del contenedor principal */
-  max-width: 1600px; /* Aumentamos el ancho máximo del contenedor principal */
+  width: 98%; 
+  max-width: 1600px; 
   height: auto;
   padding-top: 2rem;
   color: white;
@@ -111,13 +111,13 @@
   gap: 1rem;
 }
 
-/* CATEGORIAS */
+
 .categorias {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  width: 20%; /* Reducimos el ancho de las categorías para compensar el mayor ancho general */
+  width: 20%; 
   height: auto;
 }
 
@@ -136,23 +136,30 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 0.6rem; /* Reducimos un poco más el gap entre categorías */
+  gap: 0.6rem; 
 }
 
-/* CONTENIDO CENTRAL */
+
 .content {
-  width: 75%; /* Aumentamos el ancho del contenido central */
+  width: 75%; 
   padding-right: 30px;
 }
 
 .platillos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajustamos el ancho mínimo de las tarjetas de platillos */
+  grid-template-columns: repeat(3, 1fr); 
   column-gap: 1rem;
-  row-gap: 1.2rem; /* Reducimos un poco el gap vertical */
+  row-gap: 1.2rem;
 }
 
-/* BARRA DE BÚSQUEDA Y SORTBY */
+
+@media (max-width: 768px) {
+  .platillos {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  }
+}
+
+
 .search {
   display: flex;
   justify-content: space-between;
@@ -163,27 +170,27 @@
   padding-top: 1.5rem;
 }
 
-/* BARRA DE BÚSQUEDA */
+
 .search-bar {
     display: flex;
     align-items: center;
     border-radius: 20px;
-    border: 1px solid #888; /* Borde más claro y delgado */
-    padding: 0.6rem 1rem; /* Ajustamos un poco el padding vertical */
+    border: 1px solid #888;
+    padding: 0.6rem 1rem; 
     width: 45%;
     max-width: 350px;
-    background-color: #1e1e2f; /* Añadimos un color de fondo similar al de la imagen */
-    color: #ccc; /* Color del texto de entrada */
+    background-color: #1e1e2f; 
+    color: #ccc; 
 }
 
 .search-bar input[type="text"] {
     border: none;
     background: transparent;
-    color: inherit; /* Hereda el color del contenedor */
+    color: inherit; 
     width: 100%;
     font-size: 1rem;
-    outline: none; /* Elimina el borde al enfocar */
-    margin-left: 0.5rem; /* Espacio entre el icono y el texto */
+    outline: none; 
+    margin-left: 0.5rem; 
 }
 
 .search-icon {
@@ -191,57 +198,56 @@
   font-size: 1.2rem;
 }
 
-/* SORTBY NO VISIBLE EN DISPOSITIVOS GRANDES */
 .sortby {
   display: none;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .base {
     padding: 0;
   }
 
-  /* RESPONSIVE HERO TITLE */
+  
   .hero {
     flex-direction: row;
     align-items: center;
-    padding-top: 0.8rem; /* Reducimos aún más el padding top en móvil */
-    padding-bottom: 0.8rem; /* Reducimos aún más el padding bottom en móvil */
-    width: 99%; /* Ocupa casi todo el ancho en móvil */
+    padding-top: 0.8rem; 
+    padding-bottom: 0.8rem; 
+    width: 99%; 
   }
 
   .left-column {
-    width: 45%; /* Damos más ancho a la imagen en responsive */
-    padding: 0.3rem; /* Reducimos aún más el padding de la imagen en responsive */
+    width: 45%; 
+    padding: 0.3rem; 
   }
 
   .comidaa {
-    max-height: 50px; /* Aún más pequeña en móvil */
+    max-height: 50px; 
   }
 
   .right-column {
     min-width: 55%;
-    padding-right: 0.8rem; /* Reducimos el padding derecho en móvil */
-    padding-left: 0.8rem; /* Reducimos el padding izquierdo en móvil */
+    padding-right: 0.8rem; 
+    padding-left: 0.8rem; 
   }
 
   .line {
-    font-size: 1.5rem; /* Reducimos el tamaño del título en móvil */
+    font-size: 1.5rem; 
   }
 
   .message {
-    font-size: 0.65rem; /* Reducimos el tamaño del subtítulo en móvil */
-    max-width: 120px; /* Ajustamos el ancho máximo del subtítulo en móvil */
+    font-size: 0.65rem; 
+    max-width: 120px; 
   }
 
-  /* RESPONSIVE CONTENT */
+  
   .content-container {
     flex-direction: column;
     align-items: center;
     padding-top: 0.8rem;
     gap: 1rem;
-    width: 99%; /* Ocupa casi todo el ancho en móvil */
+    width: 99%; 
   }
 
   .categorias {

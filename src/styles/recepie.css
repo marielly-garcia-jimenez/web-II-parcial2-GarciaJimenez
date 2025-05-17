@@ -18,29 +18,29 @@
 
 .recepie-header {
     display: flex;
-    flex-direction: column; /* Cambiamos la dirección a columna para centrar verticalmente los elementos */
-    align-items: center; /* Centra horizontalmente los elementos */
-    gap: 1rem; /* Reducimos un poco el espacio entre los elementos */
+    flex-direction: column;
+    align-items: center; 
+    gap: 1rem; 
     margin-bottom: 2rem;
-    text-align: center; /* Centra el texto dentro de los elementos */
+    text-align: center; 
 }
 
 .meal-image {
-    width: 200px; /* Puedes ajustar el tamaño de la imagen si lo deseas */
+    width: 200px; 
     height: auto;
     border-radius: 12px;
     box-shadow: 0 0 14px #ff66cc;
 }
 
 .recepie-info h1 {
-    font-size: 2rem; /* Ajustamos el tamaño de la fuente si es necesario */
+    font-size: 2rem; 
     margin: 0;
 }
 
 .recepie-info h3 {
-    margin: 0.3rem 0; /* Reducimos el margen */
+    margin: 0.3rem 0; 
     color: #8d4e6e;
-    font-size: 1rem; /* Ajustamos el tamaño de la fuente si es necesario */
+    font-size: 1rem; 
 }
 
 .meal-id {
@@ -63,7 +63,7 @@
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%; 
   height: 0;
   overflow: hidden;
   border-radius: 12px;
@@ -112,8 +112,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0rem; /* Antes estaba en 1rem */
-  gap: 0rem; /* Asegura cercanía si necesario */
+  margin-bottom: 0rem; 
+  gap: 0rem; 
 }
 
 .restaurar-btn {
@@ -140,7 +140,7 @@
 .ingredient-card {
   background-color: var(--card-color);
   padding: 0.75rem;
-  border-radius: 0; /* <-- Esto hace que el recuadro no tenga esquinas redondeadas */
+  border-radius: 0; 
   border: 1px solid var(--highlight-color);
   box-shadow: var(--box-shadow);
   margin: 0.5rem;
@@ -171,7 +171,7 @@
   background-color: #cc4444;
 }
 
-/* Scroll personalizado */
+
 .instructions::-webkit-scrollbar {
   width: 6px;
 }
